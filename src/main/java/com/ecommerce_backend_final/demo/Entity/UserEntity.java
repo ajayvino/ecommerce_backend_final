@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "usertable",schema = "ecommerce")
+@Table(name = "usertable")
 public class UserEntity {
 
 
@@ -21,7 +21,7 @@ public class UserEntity {
     )
     @SequenceGenerator(
             name = "product_generator",
-            schema = "ecommerce", // schema should be above the sequenceName
+            // schema should be above the sequenceName
             sequenceName = "usertable_ecommerce_sequence",
             allocationSize=1
     )

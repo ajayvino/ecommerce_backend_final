@@ -12,7 +12,7 @@ import org.hibernate.annotations.OnDeleteAction;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "ReviewTable",schema = "ecommerce")
+@Table(name = "ReviewTable")
 public class ReviewEntity {
 
     @Id
@@ -23,7 +23,7 @@ public class ReviewEntity {
     )
     @SequenceGenerator(
             name = "product_generator",
-            schema = "ecommerce", // schema should be above the sequenceName
+             // schema should be above the sequenceName
             sequenceName = "reviewtable_ecommerce_sequence",
             allocationSize=1
     )

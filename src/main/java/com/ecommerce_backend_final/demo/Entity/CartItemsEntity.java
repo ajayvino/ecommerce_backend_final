@@ -11,7 +11,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Data
-@Table(name = "cartitemstable" , schema = "ecommerce")
+@Table(name = "cartitemstable")
 @NoArgsConstructor
 public class CartItemsEntity {
 
@@ -23,7 +23,6 @@ public class CartItemsEntity {
     )
     @SequenceGenerator(
             name = "product_generator",
-            schema = "ecommerce", // schema should be above the sequenceName
             sequenceName = "cartitems_ecommerce_sequence",
             allocationSize=1
     )

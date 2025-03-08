@@ -10,7 +10,7 @@ import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "coupontable",schema = "ecommerce")
+@Table(name = "coupontable")
 @NoArgsConstructor
 public class CouponEntity {
 
@@ -22,7 +22,7 @@ public class CouponEntity {
     )
     @SequenceGenerator(
             name = "product_generator",
-            schema = "ecommerce", // schema should be above the sequenceName
+             // schema should be above the sequenceName
             sequenceName = "coupontable_ecommerce_sequence",
             allocationSize=1
     )

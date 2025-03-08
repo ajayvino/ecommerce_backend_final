@@ -15,7 +15,7 @@ import java.util.UUID;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "ordertable",schema = "ecommerce")
+@Table(name = "ordertable")
 public class OrderEntity {
 
     @Id
@@ -26,7 +26,7 @@ public class OrderEntity {
     )
     @SequenceGenerator(
             name = "product_generator",
-            schema = "ecommerce", // schema should be above the sequenceName
+             // schema should be above the sequenceName
             sequenceName = "ordertable_ecommerce_sequence",
             allocationSize=1
     )
