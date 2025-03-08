@@ -1,0 +1,14 @@
+package com.ecommerce_backend_final.demo.Repository;
+
+
+import com.ecommerce_backend_final.demo.Entity.FAQEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface FAQRepository extends JpaRepository<FAQEntity,Long> {
+
+    List<FAQEntity> findAllByProductid(Long productid);
+}
