@@ -14,8 +14,8 @@ import org.springframework.stereotype.Service;
 public class RazorpayService {
 
     private static final String ORDER_PLACED = "PLACED";
-    private static final String KEY_ID = "rzp_test_kr7Gr4OlhUH26v";
-    private static final String KEY_SECRET = "4J17MDqZ6UJ4LQlPpBh3TSTw";
+    private static final String KEY_ID = "rzp_live_VBXyqgWo7SKKEY";
+    private static final String KEY_SECRET = "wSZ0xab55bgpYm31QolU2oAE";
     private static final String CURRENCY="INR";
 
     public RazorpayTransactionDetailsDTO createTransaction(Long amount) throws RazorpayException, JSONException {
